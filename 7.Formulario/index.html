@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="dataform">
+        <label for="">nombre</label>
+        <input type="text"
+        id=" name"
+        name="name"
+     placeholder="introduce tu nombre"
+      minlength="3"
+      maxlength="50"
+      pattern=""
+      title="introduce al menos 3 caracteres maximo 50"
+      tabindex="0"
+      autofocus="true"
+      autocomplete="off"
+      required
+      ><br><br>
+      <select id="typedocument" name="typedocument">
+        <option value="nada" select="selected">selecione un tipo de documento</option>
+        <option value="cc"> cedula de identidad</option>
+        <option value="ti">tarjeta de idntidad</option>
+        <option value="ce">cedula de extranjeria</option>
+      </select
+       min="2" max="99" tabindex="1">
+       <label for="estado civil"> estados cicvil</label>
+       <input type="radio" name="ecivil"id="ecivil" value="soltero">soltero (a)
+       <input type="radio" name="ecivil" id="ecivil"value="casado">Casado (a)
+       <input type="radio" name="ecivil"id="ecivil" value="Divorciado">Divorciado (a)
+       <input type="radio" name="ecivil"id="ecivil" value="Viudo">Viudo (a)
+       <input type="radio" name="ecivilid"placeholder>
+       <fieldset><legend>informacion de estudio y otros</legend>
+        <label for="colores">color favorito</label>
+        <input type="color" id="colores">
+        <label for="dateInsc">fecha de inscripicion</label>
+        <input for="date" id="dateInsc">
+        <label for="file" name="file"id="documentfile"></label>
+        <input type="text">
+       </fieldset>
+       <hr>
+       <label for="lenguajes">lenguajes de programacion</label>
+       <select id="lenguajes" name="lenguajes">
+        <OPtgroup label="lenguajes Tipados">
+            <option value="java">java</option>
+            <option value="csharp">c#</option>
+            <option value="c">c++</option>
+        </OPtgroup>
+        <optgroup label="lenguajes no Tipados">
+            <option value="python">python</option>
+            <option value="javascript">javascript</option>
+        </optgroup>
+       </select>
+       <br>
+       <label for="acepta">¿Acpta terminos y condiciones?</label>
+       <input type="checkbox" id="terminos">
+       <hr>
+       <input type="submit" value="envio de datos">
+       <button id="validar">validar</button>
+    
+</body>
+</html>
